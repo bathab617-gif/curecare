@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيور كير - الأخبار</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="chatbot.html" class="navbar-brand">كيور كير</a>
+            <div class="navbar-user">
+                <span id="userGreeting">مرحبا</span>
+                <button id="logoutBtn">تسجيل الخروج</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tabs-nav">
+        <a href="chatbot.html" class="tab-btn">🤖 حكيم AI</a>
+        <a href="news.html" class="tab-btn active">📢 الأخبار</a>
+        <a href="about.html" class="tab-btn">ℹ️ حول</a>
+    </div>
+
+    <main class="dashboard-container">
+        <section class="tab-panel active">
+            <h2>الأخبار الطبية</h2>
+            <p>طالع أحدث الأخبار الطبية مع أيقونة ملفتة لكل خبر.</p>
+            <div class="news-container"></div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

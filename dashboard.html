@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيور كير - لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">كيور كير</a>
+
+            <div class="navbar-user">
+                <span id="userGreeting">مرحبا</span>
+                <button id="logoutBtn">تسجيل الخروج</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TABS -->
+    <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="chatbot">🤖 حكيم AI</button>
+        <button class="tab-btn" data-tab="news">📢 الأخبار</button>
+        <button class="tab-btn" data-tab="about">ℹ️ حول</button>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <main class="dashboard-container">
+
+        <!-- CONTENT -->
+        <div class="tabs-content">
+
+            <!-- CHATBOT -->
+            <section id="chatbot" class="tab-panel active">
+                <h2>حكيم AI الدردشة</h2>
+                <p>مساعدك الطبي</p>
+
+                <div class="chatbot-container">
+                    <iframe 
+                        src="https://hkym-tby--bathab22411.replit.app"
+                        allowfullscreen
+                        style="width: 100%; height: 600px; border: none;">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- NEWS -->
+            <section id="news" class="tab-panel">
+                <h2>الأخبار الطبية</h2>
+                <div class="news-container"></div>
+            </section>
+
+            <!-- ABOUT -->
+            <section id="about" class="tab-panel">
+                <h2>حول كيور كير</h2>
+
+                <div class="about-content">
+                    <h3>قصتنا</h3>
+                    <p>
+                        شاركنا في فعالية "أمة الابتكار" بهدف تقديم تجربة طبية رقمية أفضل باللغة العربية. عملنا على تصميم واجهة سهلة الاستخدام تجمع بين الأخبار الطبية والمساعدة الذكية.
+                    </p>
+                    <p>
+                        نحن فريق عمل يسعى لتقديم محتوى صحي موثوق وتجربة سهلة وسريعة للمستخدمين باللغة العربية. الهدف هو جعل المعلومات الصحية أقرب وأكثر وضوحاً للجميع.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
